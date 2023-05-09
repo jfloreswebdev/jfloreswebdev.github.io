@@ -1,0 +1,52 @@
+NIGHTWING
+Frost Blue #71B5F7
+Electric Blue #428AC3
+
+
+RED HOOD
+Brown Leather #59432F
+Rust Red #8D1E12
+
+
+ROBIN
+Rust Red #8D1E12
+Lightning Yellow #F2BB43
+Army Green #41532C
+
+
+BATGIRL
+Lightning Yellow #F28843
+Steel Blue #38415A
+Midnight Blue #1C2244
+
+
+<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+.form-container .cancel {
+        background-color: red;
+    }
+
+    <h3>Enter Information as on Invitation</h3>
+                
+
+                <label for="fname"></b></label>
+                <input type="text" placeholder="First Name" name="fname" required>
+
+                <label for="lname"><b></b></label>
+                <input type="text" placeholder="Last Name" name="lname" required><br>
+
+                
+                <h3>Response</h3>
+                
+
+                <input type="radio" id="accept" name="fav_language" value="accept">
+                <label for="HTML">Accepts with pleasure</label><br>
+
+                <input type="radio" id="declinw" name="fav_language" value="decine">
+                <label for="HTML">declines with regret</label><br>
+
+                
+                
+
+
+                <button type="submit" class="btn">Login</button>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Varta:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94f8d68489.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/main.css" />
+    
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="https://www.sabot.org/amphitheater/" target="_blank">Venue</a>
+                </li>
+                <li>
+                    <a href="https://www.target.com/gift-registry/gift-giver?registryId=d9a082b0-edfc-11ed-ace5-8bc5045725f8&type=WEDDING&regMode=REGST&registrant=true" target="_blank">Registry</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+
+
+        <div class="hero-text">
+            <h1 class="header-text">Peter &amp; Mary</h1>
+            <p id="celebrate">Save The Date</p>
+            <p>May 3, 2026</p>
+            <center><p id="counter">Loading...</p></center>
+            <script src="script.js"></script>
+        
+        <button class="button" onclick="openForm()">R.S.V.P.</button>
+
+        <div class="form-popup" id="myForm">
+            <div>
+                <span class="close" onclick="closeForm()"></button>+</span>
+            </div>
+            <td style="background-color: black;">
+                <h3>Enter Name as on invitation</h3>
+            </td>
+            
+            <form action="https://jfloreswebdev.com/action_page.php" class="form-container">
+                <table>
+                    <tr>
+                        <td>
+                            <label for ="uname">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" name="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="uemail">Email:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="uemail" name="usermail">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="response">Response:</label>
+                        </td>  
+                        <td>
+                            <label>
+                                <input type="radio" value="yes" name="Response">Accept
+                            </label>
+                            <label><br>
+                                <input type="radio" value="no" name="Response">Decline
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="city">With Guest?</label>
+                        </td>
+                        
+                        <td>
+                            <select id="date" name="date">
+                                <option disabled selected>--With Guest?--</option>
+                                    
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Meal</label>
+                        </td>
+                        
+                        <td>
+                            <select id="meal" name="meal">
+                                <option disabled selected>--Meal--</option>
+                                    <option>Beef</option>
+                                    <option>Chicken</option>
+                                    <option>Fish</option>
+                                    <option>Vegetarian</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="btn">Submit</button>
+                            <button type="reset" class="reset">Reset</button>
+                        </td>    
+                    </tr>
+                </table>
+                
+            </form>
+        </div>
+        </div>
+        
+        
+        
+    
+</body>
+</html>

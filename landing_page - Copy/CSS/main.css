@@ -1,0 +1,678 @@
+/* font-family: 'Archivo', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+    
+        
+
+body  {
+    height: 100vh;
+    width: auto;
+    background-color: whitesmoke;
+    background-image: url("/images/pexels-asad-photo-maldives-1024975.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+        
+} 
+
+header  {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 ;
+}
+
+/*logo here if you want one
+.logo   {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fefefe;
+} */
+
+
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a    {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover  {
+    color:#ff9800;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.nav-bar ul li a.active {
+    color: #ff9800;
+    
+}
+
+.form-popup   {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: black;
+}
+
+.form-container {
+    max-width: 100%;
+    padding: 10px;
+    background-color: black;
+    
+}
+
+.form-container input[type=text] {
+    width: 300px!important;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus  {
+    background-color: #ddd;
+    outline: none;
+}
+
+select {
+    width: 300px!important;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+option {
+    width: 300px!important;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px!important;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.form-container .reset {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100px!important;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.close  {
+    font-size: 45px;
+    font-weight: 600;
+    display: inline-block;
+    transform: rotate(45deg);
+    float: right;
+}
+
+.form-container .btn:hover .open-button:hover  {
+    opacity: 1;
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 1400px)  {
+    header {
+        padding: 0 30px;
+    }
+
+    .button {
+        margin-top: 80px;
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        /*color: ;*/
+        /*background-color: ; */
+        border: none;
+        border-radius: 15px;
+        opacity: 85%;
+        box-shadow: 0 9px #999;
+    
+        
+    }
+
+    .hero-text  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        color: whitesmoke;
+        font-size: 1.4em;
+        letter-spacing: 9px;
+        margin-top: 100px;
+    
+
+    }
+
+    .hero-text.h1   {
+        font-height: 1.3em;
+    }
+
+    
+    h1{
+        margin: 0 0 3rem 0;
+        font-family: 'Varta', sans-serif;
+        
+    }
+    
+    p {
+        font-family: 'Archivo', sans-serif;
+        text-shadow: 2px 2px black;
+        letter-spacing: 3px;
+        color: white;
+        margin-top: 40px;
+    
+    
+    }
+
+
+
+
+    .button {
+        margin-top: 80px;
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        /*color: ;*/
+        /*background-color: ; */
+        border: none;
+        border-radius: 15px;
+        opacity: 85%;
+        box-shadow: 0 9px #999;
+    
+        
+    }
+
+    .hero-text  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        color: whitesmoke;
+        font-size: 1.4em;
+        letter-spacing: 9px;
+        margin-top: 100px;
+    }
+    
+    h1{
+        margin: 0 0 3rem 0;
+        font-family: 'Varta', sans-serif;
+    }
+    
+    p {
+        font-family: 'Archivo', sans-serif;
+        text-shadow: 2px 2px black;
+        letter-spacing: 3px;
+        color: white;
+        margin-top: 40px;
+    
+    
+    }
+
+    .form-popup   {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        background-color: black;
+    }
+
+    .form-container {
+        max-width: 100%;
+        padding: 10px;
+        background-color: black;
+        
+    }
+
+    .form-container input[type=text] {
+        width: 300px!important;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    .form-container input[type=text]:focus  {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    select {
+        width: 300px!important;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    option {
+        width: 300px!important;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100px!important;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        font-size: 18px;
+    }
+
+    .form-container .reset {
+        background-color: red;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100px!important;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        font-size: 18px;
+    }
+
+    .close  {
+        font-size: 45px;
+        font-weight: 600;
+        display: inline-block;
+        transform: rotate(45deg);
+        float: right;
+    }
+
+    .form-container .btn:hover .open-button:hover  {
+        opacity: 1;
+    }
+
+    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 599px)  {
+    
+    body  {
+        height: 100vh;
+        width: auto;
+        background-color: whitesmoke;
+        background-image: url("/images/pexels-asad-photo-maldives-1024975.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position:center center;
+            background-size: cover;
+            
+            
+    } 
+    
+    
+    .hamburger  {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 10px;
+    }
+
+    .hamburger.line.active {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 10px;
+        
+    }
+    .nav-bar.active {
+        height: 450px;
+        position: absolute;
+        left: 0;
+        width: 100vw;
+        top: 80px;
+        background: black;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar{
+        height: 700px;
+        position: absolute;
+    }
+
+
+    .nav-bar ul li a:hover  {
+        color:#ff9800;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    
+    
+    
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    
+
+
+    
+    .button {
+        margin-top: 80px;
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        /*color: ;*/
+        /*background-color: ; */
+        border: none;
+        border-radius: 15px;
+        opacity: 85%;
+        box-shadow: 0 9px #999;
+    
+        
+    }
+
+    .hero-text  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        height: 100%;
+        color: whitesmoke;
+        font-size: 1.4em;
+        letter-spacing: 9px;
+        margin-top: 100px;
+    
+       
+    }
+    
+
+    
+    h1{
+        margin: 0 0 3rem 0;
+        font-family: 'Varta', sans-serif;
+        
+        
+    }
+    
+    p {
+        font-family: 'Archivo', sans-serif;
+        text-shadow: 2px 2px black;
+        letter-spacing: 3px;
+        color: white;
+        margin-top: 40px;
+    
+    
+    }
+
+    .form-popup   {
+        display: none;
+        position: fixed;
+        bottom: 0;
+        right: 15px;
+        border: 3px solid #f1f1f1;
+        z-index: 9;
+        background-color: black;
+    }
+
+    .form-container {
+        max-width: 50%;
+        padding: 10px;
+        background-color: black;
+        
+    }
+
+    .form-container input[type=text] {
+        width: 200px!important;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    .form-container input[type=text]:focus  {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    .form-container .response{
+        position: block;
+        
+    }
+
+    select {
+        width: 200px!important;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    option {
+        width: 200px!important;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100px!important;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        font-size: 18px;
+    }
+
+    .form-container .reset {
+        background-color: red;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100px!important;
+        margin-bottom: 10px;
+        opacity: 0.8;
+        font-size: 18px;
+    }
+
+    .close  {
+        font-size: 45px;
+        font-weight: 600;
+        display: inline-block;
+        transform: rotate(45deg);
+        float: right;
+    }
+
+    .form-container .btn:hover .open-button:hover  {
+        opacity: 1;
+    }
+
+    
+}
+
+
+
+
+.hero-text  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 1.4em;
+    letter-spacing: 9px;
+    margin-top: 100px;
+
+
+}
+
+h1{
+    margin: 0 0 3rem 0;
+    font-family: 'Varta', sans-serif;
+}
+
+p {
+    font-family: 'Archivo', sans-serif;
+    text-shadow: 2px 2px black;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 40px;
+
+
+}
+
+
+
+
+.button {
+    margin-top: 80px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    /*color: ;*/
+    /*background-color: ; */
+    border: none;
+    border-radius: 15px;
+    opacity: 85%;
+    box-shadow: 0 9px #999;
+
+    
+}
+
+.hero-text  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 1.4em;
+    letter-spacing: 9px;
+    margin-top: 100px;
+}
+
+h1{
+    margin: 0 0 3rem 0;
+    font-family: 'Varta', sans-serif;
+}
+
+p {
+    font-family: 'Archivo', sans-serif;
+    text-shadow: 2px 2px black;
+    letter-spacing: 3px;
+    color: white;
+    margin-top: 40px;
+}
+
+
+
+
+.button {
+    margin-top: 28px;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    /*color: ;*/
+    /*background-color: ; */
+    border: none;
+    border-radius: 15px;
+    opacity: 85%;
+    box-shadow: 0 9px #999;
+
+    
+}
+
+.button:hover {background-color: #ff9800} 
+
+.button:active  {
+    background-color: #ff9800;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+    
+
+.venue  {
+    background-image: url("/images/botanical_garden.png");
+}
+
+
+
+
+
+
+
