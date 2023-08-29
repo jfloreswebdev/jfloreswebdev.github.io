@@ -1,0 +1,919 @@
+<!DOCTYPE html PUBLIC "~//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <title>Document</title>
+    
+    
+    
+    
+
+
+<style type="text/css">
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+    
+
+    td.topborder{
+        background-color:#363636;
+        padding-top: 10px;
+    }
+
+    p.topborder {
+        text-align:center;
+        color:#ffffff; 
+        font-size:12px; 
+        line-height: 1.5em;
+    }
+
+    td.logo {
+        background-color:#fff2e6;
+        text-align: center;
+        padding: 10px 0 10px 0; 
+    }
+
+    img.logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    tr.hero   {
+        background-color:#e9ab17;
+    }
+
+    td.hero {
+        text-align: center;
+        padding-bottom: 0;
+        width: 100%;
+        vertical-align: 0;
+    }
+
+    td.call_action  {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    tr.products {
+        background-color: #ffffff; 
+        color: #2d2d2d;
+    }
+
+
+    img.products    {
+        display: block;
+        width: 380px;
+    }
+
+    td.products {
+        padding: 5px 10px;
+    }
+
+    td.products_desc   {
+        padding: 10px 5px; 
+        text-align: center
+    }
+
+    .p {
+        font-size: 32px;
+    }
+
+    td.footer   {
+        column-span: 2;
+        background-color: #fff2e6; 
+        text-align: center;
+    }
+
+    td.footer_social    {
+        background-color: #fff2e6;
+        text-align: center;
+        margin-bottom: 10px; 
+        padding-bottom: 15px;
+
+        
+    }
+
+    img.footer_social   {
+        width: 36px;
+        height: 36px;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    a:link{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: blue;
+        text-decoration: none;
+    }
+
+    .icon{
+        width: 1em;
+        height: 1em;
+        vertical-align: -.125em
+    }
+
+    .button {
+        background-color: #e9ab17;
+        border: none;
+        color: white;
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 16px;
+
+    }
+
+    .button:hover{
+        background-color: black;
+        color: white;
+
+    }
+
+    .button2    {
+        background-color: #e9ab17;
+        border: 2px black bold;
+        color: black;
+        padding: 18px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 0;
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+
+    .button2:hover  {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    @media screen and (max-width: 960px) {
+        .container {
+          /* width: 960px; */
+          width: 100%;
+        }
+
+        td.topborder{
+        background-color:#363636;
+        padding-top: 10px;
+    }
+
+    p.topborder {
+        text-align:center;
+        color:#ffffff; 
+        font-size:12px; 
+        line-height: 1.5em;
+    }
+
+    td.logo {
+        background-color:#fff2e6;
+        text-align: center;
+        padding: 10px 0 10px 0; 
+    }
+
+    img.logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    tr.hero   {
+        background-color:#e9ab17;
+    }
+
+    td.hero {
+        text-align: center;
+        padding-bottom: 0;
+        width: 100%;
+        vertical-align: 0;
+    }
+
+    td.call_action  {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    tr.products {
+        background-color: #ffffff; 
+        color: #2d2d2d;
+    }
+
+
+    img.products    {
+        display: block;
+        width: 380px;
+    }
+
+    td.products {
+        padding: 5px 10px;
+    }
+
+    td.products_desc   {
+        padding: 10px 5px; 
+        text-align: center
+    }
+
+    .p {
+        font-size: 32px;
+    }
+
+    td.footer   {
+        column-span: 2;
+        background-color: #fff2e6; 
+        text-align: center;
+    }
+
+    td.footer_social    {
+        background-color: #fff2e6;
+        text-align: center;
+        margin-bottom: 10px; 
+        padding-bottom: 15px;
+
+        
+    }
+
+    img.footer_social   {
+        width: 36px;
+        height: 36px;
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    a:link{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: blue;
+        text-decoration: none;
+    }
+
+    .icon{
+        width: 1em;
+        height: 1em;
+        vertical-align: -.125em
+    }
+
+    .button {
+        background-color: #e9ab17;
+        border: none;
+        color: white;
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 16px;
+
+    }
+
+    .button:hover{
+        background-color: black;
+        color: white;
+
+    }
+
+    .button2    {
+        background-color: #e9ab17;
+        border: 2px black bold;
+        color: black;
+        padding: 18px 70px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 0;
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+
+    .button2:hover  {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+      }
+
+      @media screen and (max-width: 599px) {
+        .container {
+          width: 100%;
+        }
+
+        
+        td.topborder{
+        background-color:#363636;
+        padding-top: 0px;
+    }
+
+    p.topborder {
+        text-align:center;
+        color:#ffffff; 
+        font-size:13px!important; 
+        line-height: 1.5em;
+    }
+
+    td.logo {
+        background-color:#fff2e6;
+        text-align: center;
+        padding: 10px 0 10px 0; 
+    }
+
+    img.logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    tr.hero   {
+        background-color:#e9ab17;
+    }
+
+    td.hero {
+        text-align: center;
+        padding-bottom: 0;
+        width: 100%;
+        vertical-align: 0;
+    }
+
+    td.call_action  {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+        tr.products {
+        display: grid;
+        position: inline;
+        background-color: #ffffff; 
+        color: #2d2d2d;
+        
+        }
+
+        td.products {
+        padding: 18px 10px;
+        align-items: center!important;
+        
+        }
+
+        img.products {
+            
+            display: inline;
+            width: 580px;
+        }
+
+        td.products_desc   {
+        margin-top: 0;
+        padding-top: 0;
+        
+        text-align: center
+    }
+
+        h1  {
+            font-size: 22px!important;
+            line-height: 40px!important;
+        }
+
+        H3  {
+            font-size: 32px!important;
+            line-height: 40px!important;
+        }
+
+        p  {
+            font-size: 24px!important;
+            
+        }
+
+
+        .button {
+        background-color: #e9ab17;
+        border: none;
+        color: white;
+        font-size: 28px!important;
+        padding: 20px 75px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 16px;
+
+    }
+
+    .button2    {
+        background-color: #e9ab17;
+        border: 2px black bold;
+        color: black;
+        font-size: 28px!important;
+        padding: 22px 75px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 0;
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+
+    .button2:hover  {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .button:hover{
+        background-color: black;
+        color: white;
+
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    a:link{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: blue;
+        text-decoration: none;
+    }
+
+    td.footer   {
+        column-span: 2;
+        background-color: #fff2e6; 
+        text-align: center;
+        font-size: 24px!important;
+        line-height: 32px!important;
+        
+    }
+
+    td.footer_social    {
+        background-color: #fff2e6;
+        text-align: center;
+        margin-bottom: 10px; 
+        padding-bottom: 15px;
+
+        
+    }
+
+    img.footer_social   {
+        width: 48px!important;
+        height: 48px!important;
+    }
+
+    
+
+      }
+
+
+
+      @media only screen and (max-width: 600px) {
+        .container {
+          /* width: 960px; */
+          width: 100%;
+        }
+
+        td.topborder{
+        background-color:#363636;
+        padding-top: 0px;
+    }
+
+    p.topborder {
+        text-align:center;
+        color:#ffffff; 
+        font-size:13px!important; 
+        line-height: 1.5em;
+    }
+
+    td.logo {
+        background-color:#fff2e6;
+        text-align: center;
+        padding: 10px 0 10px 0; 
+    }
+
+    img.logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    tr.hero   {
+        background-color:#e9ab17;
+    }
+
+    td.hero {
+        text-align: center;
+        padding-bottom: 0;
+        width: 100%;
+        vertical-align: 0;
+    }
+
+    td.call_action  {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+        tr.products {
+        display: grid;
+        position: inline;
+        background-color: #ffffff; 
+        color: #2d2d2d;
+        
+        }
+
+        td.products {
+        padding: 5px 10px;
+        align-items: center!important;
+        
+        }
+
+        img.products {
+            
+            display: inline;
+            width: 580px;
+        }
+
+        td.products_desc   {
+        margin-top: 0;
+        padding-top: 0;
+        
+        text-align: center
+    }
+
+        h1  {
+            font-size: 22px!important;
+            line-height: 40px!important;
+        }
+
+        H3  {
+            font-size: 32px!important;
+            line-height: 40px!important;
+        }
+
+        p  {
+            font-size: 24px!important;
+            
+        }
+
+
+        .button {
+        background-color: #e9ab17;
+        border: none;
+        color: white;
+        font-size: 28px!important;
+        padding: 20px 75px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 16px;
+
+    }
+
+    .button2    {
+        background-color: #e9ab17;
+        border: 2px black bold;
+        color: black;
+        font-size: 28px!important;
+        padding: 22px 75px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 10px;
+        cursor: pointer;
+        border-radius: 0;
+        font-size: 18px;
+        font-weight: 700;
+        
+    }
+
+    .button2:hover  {
+        background-color: black;
+        color: white;
+        text-decoration: none;
+    }
+
+
+    .button:hover{
+        background-color: black;
+        color: white;
+
+    }
+
+    a:hover{
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    a:link{
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    a:visited{
+        color: blue;
+        text-decoration: none;
+    }
+
+    td.footer   {
+        column-span: 2;
+        background-color: #fff2e6; 
+        text-align: center;
+        font-size: 24px!important;
+        line-height: 32px!important;
+    }
+
+    td.footer_social    {
+        background-color: #fff2e6;
+        text-align: center;
+        margin-bottom: 10px; 
+        padding-bottom: 15px;
+
+        
+    }
+
+    img.footer_social   {
+        width: 48px!important;
+        height: 48px!important;
+    }
+
+    
+
+      }
+
+
+
+     
+      
+      
+
+</style>
+</head>
+<body style="margin: 0; padding: 0; min-width: 100%; background-color: #fff2e6">
+    <!--start of email-->
+    <table width="600px"
+    cellspacing="0"
+    cellpadding="0"
+    border="0"
+    align="center"
+    role="presentation">
+        <tr>
+            <td align="center">
+                <table width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                role="presentation">
+                <!--top unsubscribe border-->
+                    <tr>
+                        <td class="topborder">
+                            <p class="topborder">
+                            You are receiving this email because you are subscribed.
+                            To view our Privacy Policy <a href="https://savannahbee.com/pages/privacy-policy"><strong>CLICK HERE</strong></a>
+                            <br>If you would like to unsubscribe <a href="https://manage.kmail-lists.com/subscriptions/unsubscribe?cy=NrsJDM"><strong>CLICK HERE</strong> </a></p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table
+                width="600px"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                role="presentation">
+                <!--logo-- fix dark mode, maybe type in company name somewhere-->
+                    <tr>
+                        <td class="logo">
+                            <img class="logo" src="https://savannahbee.com/cdn/shop/files/bee.png?v=1657870457" alt="Savannah Bee Company Logo">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                role="presentation">
+                <tr class="hero">
+                    <td class="hero"> 
+                        <img  style="display: block;" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zx5_8U1A0gx5B6FCNKJPr-PwlVYDA9-5Rc7rA5ioXp8hOrDNcnD5sei_Zx-vLM0UBrebM7pPL_9L03s9IvDtQzZzK0lQ=s1600" width=600px ;>
+                        
+                    
+                    <colspan="2" bgcolor="#e9ab17;" style="padding: 20px 30px; color: black;">
+                        <h3 style="margin: 0;line-height:35px;">Busier than a Bee?</h3>
+                        <H1 style="margin: 0; line-height: 30px;">Take a moment to treat yourself.</H1></br>
+
+                        <p style="padding:0 20px; line-height: 30px; ">Give a gift to keep someone abuzz on their special day. Make someone feel <br> like a Queen or give that hard worker fuel to strive through the day. Take a look below for deals sweeter than honey.   </p>
+                    </td>
+
+                    <tr class="hero">
+                        <td class="call_action">
+                            <button class="button2"><a href ="https://savannahbee.com/collections/best-sellers"> Best Sellers </a></button>
+                            
+                        </td>
+
+                        
+                    </tr>
+
+                    
+                    
+                    
+                    
+                    
+                    <!---create clear button with black border for "best sellers" link-->
+                    
+                </tr>
+                </table>
+                
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+                <table width="600px"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                role="presentation">
+                    <tr style="background-color: #fff2e6;">
+                        <td bgolor="#fffffff"; align="center" style="padding: 30px 15px 30px 15px;">
+
+                            <img src="https://img.icons8.com/?size=60&id=MYvHTEji84ll&format=png">
+                            <h1 style="color: #e9ab17; font-weight: 400; line-height: .8em;"> Our Products are the Bee's Knees</h1>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <!--take away buttons, use rollover image for products and make pic links, https://freshinbox.com/tools/rollover/  -->
+        <tr>
+            <td>
+                <table width="600px"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                role="presentation">
+                    <tr class="products">
+                        <td class="products">
+                            <img class="products" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yD5fUKUtnIy_YC5sExABwbOpWVoPxy5mze-dAZ-v62Wh3CH9zj1u4sUF0X3Q-NIpxwV6EUS0U8iWCw-UbaJhKWPcRVmQ=s1600"/> 
+                        </td>
+                        <td class="products_desc">
+                            <h3>Hot Honey</h3>
+                            <p>For those who like sweetness with a little sting. </p>
+                            <button class="button"> <a href="https://savannahbee.com/search?q=hot+honey&options%5Bprefix%5D=last&filter.v.price.gte=&filter.v.price.lte=&filter.p.product_type=Honey&sort_by=relevance"<strong>Click Here</strong></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="600px"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                role="presentation">
+                    <tr class="products">
+                        <td class="products">
+                            <img class= "products" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-ye0T7xDNSFq_6Xx7WSNCSGUi5nD0Q8pZkQnd-5gYlBLQR3uNYPnclLR0LxWoTPfS2Pes9ghW5XjVllbSawUbiDfkJO=s1600"  /> 
+                        </td>
+                        <td class="products_desc">
+                            <h3>Specialty Honey</h3>
+                            <p>Sourced from various parts of the world, made for fine pairings with other foods. </p>
+                            <button class="button"> <a href="https://savannahbee.com/collections/specialty-honey?page=1"<strong>Click Here</strong></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="600px"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+                role="presentation">
+                    <tr class="products">
+                        <td class="products">
+                            <img class= "products" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yzgxAzg7qSPYwkxCNw4cbxVtmVUtlrgs40tBALszeVPT56oXOqZoze3joC0yas0RZmxQpxGoD62uSDQfKtPLtvKFSQ=s1600"  /> 
+                        </td>
+                        <td class="products_desc">
+                            <h3>Gift Sets</h3>
+                            <p>Gifts for feeling good inside and out. From Honey Sampler Boxes to Beauty and Self-Care.</p>
+                            <button class="button"> <a href="https://savannahbee.com/collections/gifts"<strong>Click Here</strong></button>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        
+        
+
+        <!--Email Footer-->
+        <tr>
+            <td align="center">
+                <table width="100%"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                role="presentation"
+                style="color: #2d2d2d;">
+                    <tr>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="footer">
+            
+                            <p >
+                                Savannah Bee Company &copy; <br>
+                                211 Johnny Mercer Blvd, Savannah, GA 31410 <br>
+                            </p>
+
+                            <p>
+                                If you wish to unsubscribe from emails <br> <a style="color: black!important; ;" href="https://manage.kmail-lists.com/subscriptions/unsubscribe?cy=NrsJDM"><strong>CLICK HERE</strong> </a></p>
+                            </p>
+                            
+
+                            
+                        </td>
+                        
+                    </tr>
+                </table>
+                <table width="600px"
+                cellspacing="0"
+                cellpadding="0"
+                border="0"
+                role="presentation">
+                    <tr>
+                        
+                        
+                    </tr>
+                    <tr > 
+                        <td class="footer_social">
+                            
+                                    <a href="https://www.instagram.com/savannahbeeco/"><img class="footer_social" src ="https://img.icons8.com/?id=32323&format=png"></a> 
+                                    <a href="https://www.tiktok.com/@savannahbeeco?lang=en"><img class="footer_social" src="https://img.icons8.com/?id=118640&format=png"></a>
+                                    <a href="https://www.facebook.com/savannahbeecompany/"><img class="footer_social" src="https://img.icons8.com/?id=118497&format=png"></a>
+                                    <a href="https://www.pinterest.com/savannahbeeco/"><img class="footer_social" src="https://img.icons8.com/?id=63676&format=png"></a>
+                                    <a href="https://www.youtube.com/c/SavannahbeeCo"><img class="footer_social" src="https://img.icons8.com/?id=19318&format=png"></a>
+                                    <a href="https://www.youtube.com/c/SavannahbeeCo"><img class="footer_social" src="https://img.icons8.com/?id=13930&format=png"></a>
+                                    <a href="https://twitter.com/SavannahBeeCo/"><img class="footer_social" src="https://img.icons8.com/?id=13963&format=png"></a>
+                            
+                        </td>
+                        
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+
+
+    </table>
+</body>
+</html>
